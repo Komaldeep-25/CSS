@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+-<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin-top: 150px;
+            border-radius: 5px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .signup
+        {
+           width: 350px;
+           background-color: rgb(221, 215, 226);
+           border-radius: 10px solid black;
+           text-align: center;
+
+        }
+        h1{
+            color: rgb(107, 5, 202);
+            text-align: center;
+        }
+        .Container
+        {
+            flex-direction: column;
+            text-align: center;
+            border-radius: 2px;
+            padding: 2px 0px 1px 1px;
+            justify-content: center;
+           
+         }
+        .label{
+            border-radius: 2px;
+            padding: 2px 2px 2px 2px ;
+            text-align: center;
+            justify-content: center;
+        }
+         .gender
+         {
+           display : inline-flex ;
+         }
+        .label2{
+            margin-right: 30px;
+        }
+        .submit
+         {
+            background-color: rgb(137, 7, 163);
+            color: rgb(248, 245, 245);
+            border: 1px solid rgb(17, 17, 17);
+            width: 250px;
+            height: 30px;
+            justify-self: center;
+         }
+         a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup">
+    <form>
+        <fieldset>
+            <h1>Sign Up</h1>
+           <div  class="Container">
+            <input  type="text" name = "Enter your name" id="Enter name" placeholder="Enter your name">
+            <br>
+            <br>
+            <input  type="text" name="E-mail" id="E-mail" placeholder="E-mail"><br>
+            <br>
+            <input type="text" name="password" id="password" placeholder="Password"><br>
+            <br>
+            <input  type="text" name = "Conform Password" id="Conform Password" placeholder="Conform Password">
+        </div>
+            <br>
+            <label for="Gender"><b>Select your Gender</b></label><br>
+            <div class="gender">
+                <input type="radio"name="Gender" class="label2"><b>Male</b><br>
+                <input type="radio"name="Gender" class="label2"><b>Female</b><br><br>
+                </div>
+                <button type="Submit" class="submit"> Submit
+                </button>
+               <h3>Already Signed up?<a href="login.html"><b>Login</b></a> here<h3></h3>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
